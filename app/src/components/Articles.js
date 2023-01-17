@@ -1,19 +1,16 @@
 import React from 'react'
 
 function Articles() {
-    const colors = [
-        "firebrick",
-        "rebeccapurple",
-        "salmon",
-        "darkslategray",
-        "hotpink",
+    const employees = [
+        { id: 1, firstName: "Zachary", lastName: "Moseti", department: "Software" },
+        { id: 2, firstName: "Rodgers", lastName: "Makori", department: "Design" },
+        { id: 3, firstName: "Jeff", lastName: "Matieso", department: "Backend" },
     ]
-    const colorElements = colors.map(color => {
-        return <li style={{ color: color }}>{color}</li>
-    })
   return (
     <div>
-        {colorElements}
+        <ul>{employees.map(employee => {
+            return <li key={employee.id}> Id: {employee.id } firstName: { employee.firstName } lastName: {employee.lastName}</li>
+        })}</ul>
     </div>
   )
 }
