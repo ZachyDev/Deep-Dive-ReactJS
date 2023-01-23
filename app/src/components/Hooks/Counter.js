@@ -2,11 +2,19 @@ import React, {useState,useEffect} from 'react'
 
 function Counter() {
     const [counter,setCounter] = useState(0);
+    
     useEffect(() => {
-        setCounter(counter+1)
-    },[counter])
+        document.body.style.backgroundImage = 'linear-gradient(to right, coral, teal)';
+    },[])
+    // update counters
+    const updateCounter = () => {
+        setCounter(counter + 1);
+    }
   return (
-    <div>Counter - {counter}</div>
+    <div>
+        <p>Counter - {counter} </p>
+        <button onClick={updateCounter}>Update counter</button>
+    </div>
   )
 }
 
