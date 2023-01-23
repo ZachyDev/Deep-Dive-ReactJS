@@ -1,11 +1,9 @@
 import './App.css';
-import BlogPost from './components/BlogPost';
-import Employees from './components/Employees'
+import Counter from './components/Hooks/Counter';
 function App() {
   return (
     <div className="App">
-      <BlogPost />
-      <Employees />
+     <Counter />
     </div>
   );
 }
