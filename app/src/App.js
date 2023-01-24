@@ -1,13 +1,13 @@
 import './App.css';
-import Users from './components/Users';
-import UsersContextProvider from './contexts/UsersContext';
+import StaffContextProvider from './contexts/StaffContext';
+import Staff from './components/Staff';
 
 function App() {
   return (
     <div className="App">
-     <UsersContextProvider>
-        <Users />
-     </UsersContextProvider>
+     <StaffContextProvider>
+      <Staff />
+     </StaffContextProvider>
     </div>
   );
 }
