@@ -1,9 +1,13 @@
 import './App.css';
-import Counter from './components/Hooks/Counter';
+import Users from './components/Users';
+import UsersContextProvider from './contexts/UsersContext';
+
 function App() {
   return (
     <div className="App">
-     <Counter />
+     <UsersContextProvider>
+        <Users />
+     </UsersContextProvider>
     </div>
   );
 }
