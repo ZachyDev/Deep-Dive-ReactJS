@@ -1,13 +1,10 @@
 import './App.css';
-import StaffContextProvider from './contexts/StaffContext';
-import Staff from './components/Staff';
+import Modal from './components/Portals/Modal';
 
 function App() {
   return (
     <div className="App">
-     <StaffContextProvider>
-      <Staff />
-     </StaffContextProvider>
+      <Modal />
     </div>
   );
 }
