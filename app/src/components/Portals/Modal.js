@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Popup from './Popup'
 
 function Modal() {
   const [show,setShow] = useState(false)
@@ -10,7 +11,7 @@ function Modal() {
     <div>
         <h1>Click to open Modal</h1>
         <button onClick={toogleModel}>Open Modal</button>
-        {show && <h1>Modal will display here</h1>}
+        <Popup show={show} closeModal={toogleModel}/>
     </div>
   )
 }
