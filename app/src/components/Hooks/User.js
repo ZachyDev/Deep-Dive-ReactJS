@@ -1,4 +1,4 @@
-import React, {useState,useContext} from 'react'
+import React, {useState,useContext,useEffect} from 'react'
 import { ThemeContext } from '../../contexts/ThemeColors';
 
 function User() {
@@ -16,6 +16,9 @@ function User() {
     const handleUsernameChange = (e) => {
       setUsername(e.target.value);
   }
+  useEffect(() => {
+    document.title = `${user} ${username}`
+  })
   return (
    <section style={{fontFamily: theme.fontFamily, color: theme.color}}>
       <input value={user} onChange={handleUserChange}/>
