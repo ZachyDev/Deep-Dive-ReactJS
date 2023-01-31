@@ -3,15 +3,23 @@ import React, {useState} from 'react'
 function User() {
     // initialize state
     const [user,setUser] = useState('Zachy');
+    const [username,setUsername] = useState('ZachyM');
+
     // handler
     const handleUserChange = (e) => {
         setUser(e.target.value);
     }
+    // handler2
+    const handleUsernameChange = (e) => {
+      setUsername(e.target.value);
+  }
   return (
-    <div>
-        <input value={user} onChange={handleUserChange}/>
-        
-    </div>
+   <section>
+      <input value={user} onChange={handleUserChange}/>
+      {user}
+      <input value={username} onChange={handleUsernameChange}/>
+      {username}
+   </section>
   )
 }
 
