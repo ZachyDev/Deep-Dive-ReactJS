@@ -1,10 +1,9 @@
 import './App.css';
-import Modal from './components/Portals/Modal';
-
+import User from './components/Hooks/User';
 function App() {
   return (
     <div className="App">
-      <Modal />
+      <User />
     </div>
   );
 }
