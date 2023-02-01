@@ -16,6 +16,7 @@ function User() {
     const handleUsernameChange = (e) => {
       setUsername(e.target.value);
   }
+  // useEffect hook
   useEffect(() => {
     document.title = `${user} ${username}`
   })
