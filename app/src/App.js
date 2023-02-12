@@ -1,12 +1,13 @@
 import './App.css';
-import User from './components/Hooks/User';
-import ThemeColors from './contexts/ThemeColors';
+import StudentDetails from './contexts/StudentDetails';
+import Student from './components/Student';
+
 function App() {
   return (
     <div className="App">
-    <ThemeColors>
-      <User />
-    </ThemeColors>
+      <StudentDetails>
+        <Student />
+      </StudentDetails>
     </div>
   );
 }
