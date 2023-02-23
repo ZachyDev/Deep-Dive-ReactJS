@@ -1,13 +1,13 @@
 import './App.css';
-import Data from './contexts/Data';
-import SculptureInfo from './components/SculptureInfo';
+import SculpList from './components/SculpList';
+import Sculptures from './contexts/Sculptures';
 
 function App() {
   return (
     <div className="App">
-      <Data>
-        <SculptureInfo />
-      </Data>
+      <Sculptures>
+        <SculpList />
+      </Sculptures>
     </div>
   );
 }
